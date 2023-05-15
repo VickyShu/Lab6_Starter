@@ -93,7 +93,7 @@ function initFormHandler() {
     document.querySelector("main").appendChild(element);
 
     const recipes = getRecipesFromStorage();
-    recipes.concat(recipeObject);
+    recipes.push(recipeObject);
     saveRecipesToStorage(recipes);
   });
   
